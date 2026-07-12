@@ -1,0 +1,13 @@
+* text=auto
+
+# Vendor desktop & platform runners so GitHub Linguist classifies repo as Dart
+windows/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+ios/** linguist-vendored
+android/** linguist-vendored
+web/** linguist-vendored
+*.cpp linguist-vendored
+*.cc linguist-vendored
+*.h linguist-vendored
+*.dart linguist-detectable=true
