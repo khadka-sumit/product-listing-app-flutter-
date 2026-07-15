@@ -45,3 +45,15 @@ class _UserListScreenState extends State<UserListScreen> {
     );
   }
 }
+
+
+// Handled snapshot.hasError and snapshot.connectionState loading indicator
+Widget buildErrorState(String error) {
+  return Center(
+    child: Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Text('Error loading data: $error', style: const TextStyle(color: Colors.red)),
+    ),
+  );
+}
+
