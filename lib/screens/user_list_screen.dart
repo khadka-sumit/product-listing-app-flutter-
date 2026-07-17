@@ -57,3 +57,14 @@ Widget buildErrorState(String error) {
   );
 }
 
+
+
+// Added FloatingActionButton to re-trigger API fetch
+Widget buildRefreshButton(VoidCallback onRefresh) {
+  return FloatingActionButton(
+    onPressed: onRefresh,
+    tooltip: 'Refresh Users',
+    child: const Icon(Icons.refresh),
+  );
+}
+
