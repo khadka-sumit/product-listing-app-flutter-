@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/user_list_screen.dart';
+import 'screens/product_list_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'API Practice',
+      title: 'Product Listing App',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.blue),
-      home: const UserListScreen(),
+      theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.teal),
+      home: const ProductListScreen(),
     );
   }
 }
