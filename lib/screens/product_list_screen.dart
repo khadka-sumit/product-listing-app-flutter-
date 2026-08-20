@@ -81,3 +81,11 @@ class _ProductListScreenState extends State<ProductListScreen> {
     );
   }
 }
+
+
+// Search query filter applied over product title and description
+List<Product> filterProducts(List<Product> all, String query) {
+  if (query.isEmpty) return all;
+  return all.where((p) => p.title.toLowerCase().contains(query.toLowerCase())).toList();
+}
+
