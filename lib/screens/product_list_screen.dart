@@ -148,3 +148,5 @@ class _ProductListScreenState extends State<ProductListScreen> {
     );
   }
 }
+
+// Real-time search query filtering logic
