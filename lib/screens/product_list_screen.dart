@@ -89,3 +89,13 @@ List<Product> filterProducts(List<Product> all, String query) {
   return all.where((p) => p.title.toLowerCase().contains(query.toLowerCase())).toList();
 }
 
+
+
+// Wrapped GridView with RefreshIndicator for pull-to-refresh
+Widget wrapWithRefresh(Widget child, Future<void> Function() onRefresh) {
+  return RefreshIndicator(
+    onRefresh: onRefresh,
+    child: child,
+  );
+}
+
